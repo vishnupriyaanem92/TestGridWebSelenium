@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>04-QO-BOX-Web-BDD-Framework</td>
+        <td>1</td>
+      <td>10 Apr 2024, 11:45</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.common.hooks.CucumberHooks.after(io.cucumber.java.Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="1589029500">1.589</td>
+              <td class="duration" data-value="1589029500">1.589</td>
+              <td class="duration" data-value="1589029500">1.589</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.common.hooks.CucumberHooks.before(io.cucumber.java.Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="8240316000">8.240</td>
+              <td class="duration" data-value="8240316000">8.240</td>
+              <td class="duration" data-value="8240316000">8.240</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_click_on_the_capsicum_check_box()</td>
+              <td>1</td>
+              <td class="duration" data-value="2011989600">2.011</td>
+              <td class="duration" data-value="2011989600">2.011</td>
+              <td class="duration" data-value="2011989600">2.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_add_to_cart_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="998100">0.000</td>
+              <td class="duration" data-value="998100">0.000</td>
+              <td class="duration" data-value="998100">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_additional_offers()</td>
+              <td>1</td>
+              <td class="duration" data-value="32992280100">32.992</td>
+              <td class="duration" data-value="32992280100">32.992</td>
+              <td class="duration" data-value="32992280100">32.992</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_capsicum()</td>
+              <td>1</td>
+              <td class="duration" data-value="5128358100">5.128</td>
+              <td class="duration" data-value="5128358100">5.128</td>
+              <td class="duration" data-value="5128358100">5.128</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_close_button_of_additonal_offers()</td>
+              <td>1</td>
+              <td class="duration" data-value="1021700">0.001</td>
+              <td class="duration" data-value="1021700">0.001</td>
+              <td class="duration" data-value="1021700">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_fresh_vegetables()</td>
+              <td>1</td>
+              <td class="duration" data-value="6773860800">6.773</td>
+              <td class="duration" data-value="6773860800">6.773</td>
+              <td class="duration" data-value="6773860800">6.773</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_is_in_jiomart_web_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="5262416900">5.262</td>
+              <td class="duration" data-value="5262416900">5.262</td>
+              <td class="duration" data-value="5262416900">5.262</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_mouse_hovers_on_every_item_of_the_groceries_list()</td>
+              <td>1</td>
+              <td class="duration" data-value="5015051700">5.015</td>
+              <td class="duration" data-value="5015051700">5.015</td>
+              <td class="duration" data-value="5015051700">5.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_mouse_hovers_on_the_groceries()</td>
+              <td>1</td>
+              <td class="duration" data-value="2948930100">2.948</td>
+              <td class="duration" data-value="2948930100">2.948</td>
+              <td class="duration" data-value="2948930100">2.948</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_scroll_down_and_up_to_verify_scroll_action()</td>
+              <td>1</td>
+              <td class="duration" data-value="622383100">0.622</td>
+              <td class="duration" data-value="622383100">0.622</td>
+              <td class="duration" data-value="622383100">0.622</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_should_able_to_see_a_flash_msg_as_string(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4166100">0.004</td>
+              <td class="duration" data-value="4166100">0.004</td>
+              <td class="duration" data-value="4166100">0.004</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_should_able_to_see_fresh_vegetables_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1686553300">1.686</td>
+              <td class="duration" data-value="1686553300">1.686</td>
+              <td class="duration" data-value="1686553300">1.686</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_should_able_to_see_string(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4212822200">4.212</td>
+              <td class="duration" data-value="4212822200">4.212</td>
+              <td class="duration" data-value="4212822200">4.212</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_should_able_to_stop_at_fruits_and_vegetable_and_see_the_different_of_it()</td>
+              <td>1</td>
+              <td class="duration" data-value="2187982200">2.187</td>
+              <td class="duration" data-value="2187982200">2.187</td>
+              <td class="duration" data-value="2187982200">2.187</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>16</td>
+            <td>16</td>
+            <td class="duration">4.917</td>
+            <td class="duration">32.992</td>
+            <td class="duration">1:18.678</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

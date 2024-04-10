@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-10T11:44:12 IST" name="Suite" finished-at="2024-04-10T11:45:40 IST" duration-ms="88010">
+    <groups>
+      <group name="cucumber">
+        <method signature="WebRunner.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.QOBOX.web.bdd.common.runnerfiles.WebRunner@9f116cc]" name="scenario" class="com.QOBOX.web.bdd.common.runnerfiles.WebRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-04-10T11:44:12 IST" name="Web" finished-at="2024-04-10T11:45:40 IST" duration-ms="88010">
+      <class name="com.QOBOX.web.bdd.common.runnerfiles.WebRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.QOBOX.web.bdd.common.runnerfiles.WebRunner@9f116cc]" started-at="2024-04-10T11:44:12 IST" name="setUpClass" finished-at="2024-04-10T11:44:14 IST" duration-ms="1685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.QOBOX.web.bdd.common.runnerfiles.WebRunner@9f116cc]" started-at="2024-04-10T11:44:14 IST" name="scenario" description="Run Cucumber Scenario" data-provider="scenarios" finished-at="2024-04-10T11:45:34 IST" duration-ms="80094" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_RC_004 Verify Groceries functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify and Validate Jio Mart web application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()='ADDITIONAL OFFERS'] (tried for 30 second(s) with 1000 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.a1xhKs}, goog:chromeOptions: {debuggerAddress: localhost:46431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.21.0.3:4444/sessio..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://172.21.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.3:7900, setWindowRect: true, strictFileInteractability: false, tg:projectName: JioMart, tg:responseUserName: Sowjanya kasa, tg:udid: 103, tg:userId: 99, tg:userToken: w94fjhgbdamztjyw9ud1cnx98lf..., timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5f59e25f0bd5cc5d1676c5c3fe7f050]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()='ADDITIONAL OFFERS'] (tried for 30 second(s) with 1000 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.a1xhKs}, goog:chromeOptions: {debuggerAddress: localhost:46431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.21.0.3:4444/sessio..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://172.21.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.3:7900, setWindowRect: true, strictFileInteractability: false, tg:projectName: JioMart, tg:responseUserName: Sowjanya kasa, tg:udid: 103, tg:userId: 99, tg:userToken: w94fjhgbdamztjyw9ud1cnx98lf..., timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5f59e25f0bd5cc5d1676c5c3fe7f050
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.QOBOX.web.bdd.ccl.WebActions.waitForVisible(WebActions.java:37)
+at com.QOBOX.web.bdd.ccl.WebActions.Click(WebActions.java:87)
+at com.QOBOX.web.bdd.screens.JioMartPage.addOffersofCap(JioMartPage.java:213)
+at com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_additional_offers(JioMartSteps.java:119)
+at ✽.User clicks on Additional Offers(file:///F:/TestGridWebSelenium/JioMart/src/test/java/com/QOBOX/web/bdd/features/JioMart.feature:52)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.QOBOX.web.bdd.common.runnerfiles.WebRunner@9f116cc]" started-at="2024-04-10T11:45:36 IST" name="tearDownClass" finished-at="2024-04-10T11:45:40 IST" duration-ms="3955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.QOBOX.web.bdd.common.runnerfiles.WebRunner -->
+    </test> <!-- Web -->
+  </suite> <!-- Suite -->
+</testng-results>

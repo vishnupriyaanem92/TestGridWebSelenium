@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Web</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">88,010</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Web &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.QOBOX.web.bdd.common.runnerfiles.WebRunner</td><td><a href="#m0">scenario</a></td><td rowspan="1">1712729654671</td><td rowspan="1">80094</td></tr></tbody>
+</table>
+<h2>Web</h2><h3 id="m0">com.QOBOX.web.bdd.common.runnerfiles.WebRunner#scenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;TC_RC_004 Verify Groceries functionality&quot;</td><td>&quot;Verify and Validate Jio Mart web application&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;ADDITIONAL OFFERS&apos;] (tried for 30 second(s) with 1000 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.a1xhKs}, goog:chromeOptions: {debuggerAddress: localhost:46431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.21.0.3:4444/sessio..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://172.21.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.3:7900, setWindowRect: true, strictFileInteractability: false, tg:projectName: JioMart, tg:responseUserName: Sowjanya kasa, tg:udid: 103, tg:userId: 99, tg:userToken: w94fjhgbdamztjyw9ud1cnx98lf..., timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5f59e25f0bd5cc5d1676c5c3fe7f050
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.QOBOX.web.bdd.ccl.WebActions.waitForVisible(WebActions.java:37)
+	at com.QOBOX.web.bdd.ccl.WebActions.Click(WebActions.java:87)
+	at com.QOBOX.web.bdd.screens.JioMartPage.addOffersofCap(JioMartPage.java:213)
+	at com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_additional_offers(JioMartSteps.java:119)
+	at ✽.User clicks on Additional Offers(file:///F:/TestGridWebSelenium/JioMart/src/test/java/com/QOBOX/web/bdd/features/JioMart.feature:52)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

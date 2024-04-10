@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>TestNG:  Web</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Web</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 10 11:44:12 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>88 seconds (88010 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.QOBOX.web.bdd.common.runnerfiles.WebRunner.scenario()'><b>scenario</b><br>Test class: com.QOBOX.web.bdd.common.runnerfiles.WebRunner<br>Test method: Run Cucumber Scenario<br>Parameters: "TC_RC_004 Verify Groceries functionality", "Verify and Validate Jio Mart web application"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;ADDITIONAL OFFERS&apos;] (tried for 30 second(s) with 1000 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.a1xhKs}, goog:chromeOptions: {debuggerAddress: localhost:46431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.21.0.3:4444/sessio..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://172.21.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.3:7900, setWindowRect: true, strictFileInteractability: false, tg:projectName: JioMart, tg:responseUserName: Sowjanya kasa, tg:udid: 103, tg:userId: 99, tg:userToken: w94fjhgbdamztjyw9ud1cnx98lf..., timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5f59e25f0bd5cc5d1676c5c3fe7f050
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.QOBOX.web.bdd.ccl.WebActions.waitForVisible(WebActions.java:37)
+	at com.QOBOX.web.bdd.ccl.WebActions.Click(WebActions.java:87)
+	at com.QOBOX.web.bdd.screens.JioMartPage.addOffersofCap(JioMartPage.java:213)
+	at com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_additional_offers(JioMartSteps.java:119)
+	at ?.User clicks on Additional Offers(file:///F:/TestGridWebSelenium/JioMart/src/test/java/com/QOBOX/web/bdd/features/JioMart.feature:52)
+</pre></div><a href='#' onClick='toggleBox("stack-trace989001798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace989001798'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;ADDITIONAL OFFERS&apos;] (tried for 30 second(s) with 1000 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.a1xhKs}, goog:chromeOptions: {debuggerAddress: localhost:46431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.21.0.3:4444/sessio..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://172.21.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.3:7900, setWindowRect: true, strictFileInteractability: false, tg:projectName: JioMart, tg:responseUserName: Sowjanya kasa, tg:udid: 103, tg:userId: 99, tg:userToken: w94fjhgbdamztjyw9ud1cnx98lf..., timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5f59e25f0bd5cc5d1676c5c3fe7f050
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.QOBOX.web.bdd.ccl.WebActions.waitForVisible(WebActions.java:37)
+	at com.QOBOX.web.bdd.ccl.WebActions.Click(WebActions.java:87)
+	at com.QOBOX.web.bdd.screens.JioMartPage.addOffersofCap(JioMartPage.java:213)
+	at com.QOBOX.web.bdd.stepdefinations.JioMartSteps.user_clicks_on_additional_offers(JioMartSteps.java:119)
+	at ?.User clicks on Additional Offers(file:///F:/TestGridWebSelenium/JioMart/src/test/java/com/QOBOX/web/bdd/features/JioMart.feature:52)
+</pre></div></td>
+<td>80</td>
+<td>com.QOBOX.web.bdd.common.runnerfiles.WebRunner@9f116cc</td></tr>
+</table><p>
+</body>
+</html>
